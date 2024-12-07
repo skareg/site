@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Interactive Flashcards</h1>
+        <p>Flip and select cards to learn</p>
+    </div>
+    <div class="form-container">
+        <input id="word" type="text" placeholder="Word">
+        <input id="translation" type="text" placeholder="Translation">
+        <button id="addCard">Add Card</button>
+        <button id="deleteAll">Delete All Cards</button>
+            
+    </div>
+    <div class="bulk-container">
+        <textarea id="bulkInput" placeholder="Enter cards in the format 'Word – Translation', one per line."></textarea>
+        <button id="addBulkCards">Add Multiple Cards</button>
+    </div>    
+    <div class="flashcards-container" id="flashcards-container">
+        <!-- Cards will appear here -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Flashcards App. All rights reserved.</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
