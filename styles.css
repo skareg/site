@@ -158,7 +158,6 @@ textarea#bulkInput {
     box-sizing: border-box;
 }
 
-
 textarea:focus {
     outline: none;
     border-color: #6b6b8d;
@@ -200,4 +199,56 @@ footer {
     padding: 10px 0;
     width: 100%;
     font-size: 0.9em;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    /* Мобильные устройства и планшеты */
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .bulk-container {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .flashcard {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Очень маленькие экраны */
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .form-container input,
+    .form-container button,
+    .bulk-container textarea,
+    .bulk-container button {
+        width: 90%;
+    }
+
+    .flashcard {
+        width: 120px;
+        height: 180px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
 }
